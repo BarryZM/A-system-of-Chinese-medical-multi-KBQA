@@ -20,3 +20,4 @@ Recently, many work focus on how to use knowledge graph to solve the simple ques
 |symptoms|5998 |
 |recipes|4506 |
 | others|15945 |
+ ![Image text](https://github.com/ToneLi/Some-charts-about-my-research/blob/master/medical_KG.png)
