@@ -14,4 +14,4 @@ Recently, many work focus on how to use knowledge graph to solve the simple ques
 | accompanies| 2205 |symptoms|5998 |
 |recipes|4506 | others|15945 |
 
- <img src="https://github.com/ToneLi/Some-charts-about-my-research/blob/master/medical_KG.png" width="400"/>
+ <img src="https://github.com/ToneLi/Some-charts-about-my-research/blob/master/medical_KG.png" width="600"/>
