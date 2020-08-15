@@ -1,3 +1,4 @@
 # Chinese-Medical-Multi-Hop-Question-Answering
-This project is about how to create a Chinese medical knowledge and generate the templates to answer the multi-hop question. 
+This project is about how to create a Chinese medical knowledge graph and generate the templates to answer the multi-hop question, I just use the rules to find the answer of a question in the first, more model will update.
 ## Introduction
+Recently, many work focus on how to use knowledge graph to solve the simple question, few work about complex relation (1hop, 2hop, or more hops), expecially in Chinese. It's very important in the real application. So in this project, I build a Chinese medical knowledge graph in the first, and then create some template for training the model or answer the question by the rules, I will provide the method about how to use rule to answer the question, at the same time the training set for deep learning model will also be provided. By this project, you will learn how to create a knowledge graph, visualize them by neo4j, and use rules to answer the complex question.
