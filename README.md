@@ -39,7 +39,7 @@ def provience_w():
 OK, until now, I have there triple files, triple in ownthinkKG, triple in QASystemOnMedicalKG and Hopistal_trple.txt from me. I used entity in (QASystemOnMedicalKG: food.txt, department.txt, etc) at the head or tail to search the triple in ownthinkKG, by this way, I can get two hops relation. Combining the Hopistal_trple.txt  to get the CMKG file, the last triple file is MKG_triple.txt.
 ### Graph
 In the below, there are five subgraphs, they are a part of CMKG, I use it to explain the complex relations and how to genarate the template. In these graphs, hospital, disease, food, drug are the center node.
- <img src="https://github.com/ToneLi/Some-charts-about-my-research/blob/master/medical_KG.png" width="600"/>
+ <img src="https://github.com/ToneLi/Some-charts-about-my-research/blob/master/MKG.png" width="600"/>
 ### Visualization, Store by Neo4j
 In the first , you should config the JavaJdk [Refer](https://blog.csdn.net/luobo_666/article/details/82794819), and download neo4j from [Here](https://neo4j.com/), the full progress, you can refer [Here](https://blog.csdn.net/luobo_666/article/details/82794202)
 ### How to import MKG_triple.txt in Neo4J
