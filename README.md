@@ -38,4 +38,6 @@ def provience_w():
 ### Graph
 In the below, there are five subgraphs, they are a part of CMKG, I use it to explain the complex relations and how to genarate the template. In these graphs, hospital, disease, food, drug are the center node.
  <img src="https://github.com/ToneLi/Some-charts-about-my-research/blob/master/medical_KG.png" width="600"/>
+### Visualization, Store by Neo4j
+In the first , you should config the JavaJdk [Refer](https://blog.csdn.net/luobo_666/article/details/82794819), and download neo4j from [Here](https://neo4j.com/), the full progress, you can refer [Here](https://blog.csdn.net/luobo_666/article/details/82794202)
  
