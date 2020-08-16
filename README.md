@@ -116,6 +116,7 @@ entity0,性别,entity3,RELATIONSHIP
 In the last, we just open http://localhost:7474/. When you first open it, the default password is neo4j. Ok, it's done.
 ### My KG in Neo4j
 <img src="https://github.com/ToneLi/Some-charts-about-my-research/blob/master/medical_KG_neo4j.png" width="800"/>
+You can by "match(n) return n" to check overall graph
 
   
  
