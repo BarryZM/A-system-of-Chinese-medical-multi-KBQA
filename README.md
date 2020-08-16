@@ -72,3 +72,20 @@ In the first, I try use "for loop" in python to import the triples to Neo4J, but
  #### Method 2: import CSV in to Neo4j
  In the first, we should download Neo4j server version (it's hard to download it , you can obtain it from [HERE](https://pan.baidu.com/s/1lJD57y-o3qRI-GmBxbnXNQ), code: wl9t), Note: we do not use [Desktop version](https://pan.baidu.com/s/1npJ2giwN48xX1E5hSxeenw), code:niuh. [How tp pip Neo4J in Win](https://blog.csdn.net/huanxuwu/article/details/80785986)
  ##### Prepare CSV files
+ Neo4j has its  unique format, if we want to input triple in Neo4j, we just use two file entity.csv and relation.csv, their for format:
+ ```
+ entity.csv ：
+ :ID,name,:LABEL
+entity0,姚明,ENTITY
+entity1,周润发,ENTITY
+entity2,YaoMing,ENTITY1
+entity3,男,ENTITY1
+
+relation.csv
+:START_ID,name,:END_ID,:TYPE
+entity0,英文名,entity2,RELATIONSHIP
+entity0,性别,entity3,RELATIONSHIP
+
+ ```
+ Ok, I give my script about how to map triple.txt into below forms. Full script in Csv_change.py
+ 
