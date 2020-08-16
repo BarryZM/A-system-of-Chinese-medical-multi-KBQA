@@ -14,7 +14,27 @@ Recently, many work focus on how to use knowledge graph to solve the simple ques
 | departments| 54 |foods|366 |
 | accompanies| 2205 |symptoms|5998 |
 |recipes|4506 | others|15945 |
+### Obtain infomation from DingXiangYiSheng
+By BeautifulSoup and request to obtain the relevent data, full script in obtain_information_from_web.py. little part:
+```
+def provience_w():
+    fw=open("provience_and_web.txt","w",encoding="utf-8")
+    html = requests.get('https://dxy.com/health/hospital/location/620000')
+    # print(html.text)
+    soup = BeautifulSoup(html.content,"html.parser")
+    # print(soup.text)
+    province_website=soup.find_all("ul",class_="nav-ul clearfix")
 
+    web=[]
+    province_name=[]
+    for p in (province_website[0].find_all("li")):
+        web.append("https://dxy.com"+(p.find_all("a")[0]["href"]))
+        province_name.append(p.get_text())
+
+    PW=dict(zip(province_name,web))
+    for key, value in PW.items():
+        fw.write(key+"\t"+value+"\n")
+```
 ### Graph
 In the below, there are five subgraphs, they are a part of CMKG, I use it to explain the complex relations and how to genarate the template. In these graphs, hospital, disease, food, drug are the center node.
  <img src="https://github.com/ToneLi/Some-charts-about-my-research/blob/master/medical_KG.png" width="600"/>
