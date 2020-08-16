@@ -67,4 +67,4 @@ In the first, I try use "for loop" in python to import the triples to Neo4J, but
             graph.create(rel_a)  
    ```
  ### Import CSV in to Neo4j
- In the first, we should download Neo4j server version (it's hard to downoad ot , you can obtain it from [HERE](https://pan.baidu.com/s/1lJD57y-o3qRI-GmBxbnXNQ), code: wl9t), not desktop version, obtain it from [HERE](https://pan.baidu.com/s/1npJ2giwN48xX1E5hSxeenw), code:niuh.
+ In the first, we should download Neo4j server version (it's hard to downoad ot , you can obtain it from [HERE](https://pan.baidu.com/s/1lJD57y-o3qRI-GmBxbnXNQ), code: wl9t), not desktop version, obtain it from [HERE](https://pan.baidu.com/s/1npJ2giwN48xX1E5hSxeenw), code:niuh. [How tp pip Neo4J in Win](https://blog.csdn.net/huanxuwu/article/details/80785986)
