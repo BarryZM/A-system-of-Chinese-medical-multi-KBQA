@@ -40,4 +40,30 @@ In the below, there are five subgraphs, they are a part of CMKG, I use it to exp
  <img src="https://github.com/ToneLi/Some-charts-about-my-research/blob/master/medical_KG.png" width="600"/>
 ### Visualization, Store by Neo4j
 In the first , you should config the JavaJdk [Refer](https://blog.csdn.net/luobo_666/article/details/82794819), and download neo4j from [Here](https://neo4j.com/), the full progress, you can refer [Here](https://blog.csdn.net/luobo_666/article/details/82794202)
+### How to import MKG_triple.txt in Neo4J
+In the first, I try use "for loop" in python to import the triples to Neo4J, but it failed:
+```
+    with open("MKG_triple.txt","r",encoding="utf-8") as fr:
+        i=0
+        for line in fr.readlines():
+
+            line=line.strip().split("|")
+            head=line[0]
+            realtion=line[1]
+            tail=line[2]
+            b = Node("entity", name=head)
+            c = Node("entity", name=tail)
+            rel_a=Relationship(a,relation,b)
+            graph.create(rel_a)
+   ```
+   This way can create the repeat node. For solving this, we can create the nodes in graph and then match them, add relation, by below, full script in import_triple_neo4j.py, this way will consume many times.
+   ```
+    a = Node("acompany", name=head)
+     graph.create(a)
+    a = graph.nodes.match("symptoms", name=tail).first()
+    b = graph.nodes.match("department", name=head).first() 
+    
+     rel_a = Relationship(a, realtion, b)
+            graph.create(rel_a)  
+   ```
  
