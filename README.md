@@ -117,6 +117,7 @@ In the last, we just open http://localhost:7474/. When you first open it, the de
 ### My KG in Neo4j
 <img src="https://github.com/ToneLi/Some-charts-about-my-research/blob/master/medical_KG_neo4j.png" width="800"/>
 You can by "match(n) return n" to check overall graph
+
 ## Answer complex questions
 I create more than 90 templates to answer the question, we all know in multi-KBQA, the first step is to make sure how to go (what's the direction of next hop), on the other hand is to choose the relation which most relevent to the question, for easy using, I labeled these templates, one template  corresponds to one relation (one hop) or two relations (two hops). So Given a question, I use entity dic to seacher the entity in sentence, make sure which template corresponds this question, at last, by topic entity and relation to get the answer. There are many work about how to choose the relations in each hop, how to stop, my work is focus on solving these problems. Please follow me about multi-KBQA!!
   
