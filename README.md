@@ -96,6 +96,25 @@ entity0,性别,entity3,RELATIONSHIP
   change after:
   dbms.active_database=graph1.db
   ```
+  ##### (2) Import your relation.csv and entity relation.csv to Neo4j.
+  --enter this contents: "neo4j-community-3.5.6\bin"
+  ---please run:
+  ```
+  neo4j-admin import --mode csv --database graph1.db --nodes G:\1_Project_Li\2020_Multi_hop_KGQA\medical_data\project\entity.csv --relationships G:\1_Project_Li\2020_Multi_hop_KGQA\medical_data\project\relation.csv
+  neo4j start
+  neo4j stop
+  neo4j.bat console
+  ```
+  And then, It will appear:
+  ```
+------
+2020-08-16 09:37:06.944+0000 INFO  Started.
+2020-08-16 09:37:08.129+0000 INFO  Remote interface available at http://localhost:7474/
+2020-08-16 09:37:13.706+0000 WARN  The client is unauthorized due to authentication failure.
+2020-08-16 10:12:45.972+0000 WARN  The client is unauthorized due to authentication failure.
+  ```
+In the last, we just open http://localhost:7474/. When you first open it, the default password is neo4j. Ok, it's done.
+
   
  
  
