@@ -71,7 +71,7 @@ In the first, I try use "for loop" in python to import the triples to Neo4J, but
    ```
  #### Method 2: import CSV in to Neo4j
  In the first, we should download Neo4j server version (it's hard to download it , you can obtain it from [HERE](https://pan.baidu.com/s/1lJD57y-o3qRI-GmBxbnXNQ), code: wl9t), Note: we do not use [Desktop version](https://pan.baidu.com/s/1npJ2giwN48xX1E5hSxeenw), code:niuh. [How tp pip Neo4J in Win](https://blog.csdn.net/huanxuwu/article/details/80785986)
- ##### Prepare CSV files
+ ##### (1) Prepare CSV files
  Neo4j has its  unique format, if we want to input triple in Neo4j, we just use two file entity.csv and relation.csv, their for format:
  ```
  entity.csv ：
@@ -87,5 +87,15 @@ entity0,英文名,entity2,RELATIONSHIP
 entity0,性别,entity3,RELATIONSHIP
 
  ```
- Ok, I give my script about how to map triple.txt into below forms. Full script in Csv_change.py
+ Ok, I have given my script about how to map triple.txt into below forms. Full script in Csv_change.py
+  ##### (2) Prepare database
+  please choose a name for your graph database, my database is called graph1.db, the default database is "graph.db" in "neo4j-community-3.5.6\data\databases". In the next, there is a very important things, please correct your  "neo4j.conf" in neo4j-community-3.5.6\conf, the change content is:
+  ```
+  change before:
+  #dbms.active_database=graph.db
+  change after:
+  dbms.active_database=graph1.db
+  ```
+  
+ 
  
