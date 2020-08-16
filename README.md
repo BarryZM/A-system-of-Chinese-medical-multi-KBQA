@@ -56,7 +56,7 @@ In the first, I try use "for loop" in python to import the triples to Neo4J, but
             rel_a=Relationship(a,relation,b)
             graph.create(rel_a)
    ```
-   This way can create the repeat node. For solving this, we can create the nodes in graph and then match them, add relation, by below, full script in import_triple_neo4j.py, this way will consume many times.
+   This way can create the repeat node. For solving this, we can create the nodes in graph and then match them, add relation, by below, full script in import_triple_neo4j1.py, this way will consume many times.
    ```
     a = Node("acompany", name=head)
      graph.create(a)
@@ -66,4 +66,5 @@ In the first, I try use "for loop" in python to import the triples to Neo4J, but
      rel_a = Relationship(a, realtion, b)
             graph.create(rel_a)  
    ```
- 
+ ### Import CSV in to Neo4j
+ In the first, we should download Neo4j server version (it's hard to downoad ot , you can obtain it from [HERE](https://pan.baidu.com/s/1lJD57y-o3qRI-GmBxbnXNQ), code: wl9t), not desktop version, obtain it from [HERE](https://pan.baidu.com/s/1npJ2giwN48xX1E5hSxeenw), code:niuh.
