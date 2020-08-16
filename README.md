@@ -114,6 +114,8 @@ entity0,性别,entity3,RELATIONSHIP
 2020-08-16 10:12:45.972+0000 WARN  The client is unauthorized due to authentication failure.
   ```
 In the last, we just open http://localhost:7474/. When you first open it, the default password is neo4j. Ok, it's done.
+### My KG in Neo4j
+<img src="https://github.com/ToneLi/Some-charts-about-my-research/blob/master/medical_KG_neo4j.png" width="600"/>
 
   
  
