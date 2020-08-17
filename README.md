@@ -125,6 +125,7 @@ I create more than 90 templates to answer the question (you can check templates.
 the code in Get_answer_1hop.py
 
 <img src="https://github.com/ToneLi/Some-charts-about-my-research/blob/master/rule_1hop.png" width="800"/>
+
 ```
 用户:在哪个医院可以找到季惠翔？
 小晨: 第三军医大学第一附属医院
