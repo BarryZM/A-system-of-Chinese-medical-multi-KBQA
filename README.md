@@ -120,6 +120,41 @@ You can by "match(n) return n" to check overall graph
 
 ## Answer complex questions
 I create more than 90 templates to answer the question (you can check templates.pdf), we all know in multi-KBQA, the first step is to make sure how to go (what's the direction of next hop), on the other word, it is to choose the relation which most relevent to the question, for easy using, I labeled these templates, one template  corresponds to one relation (one hop) or two relations (two hops). So Given a question, I use entity dic to seacher the entity in sentence, make sure which template corresponds this question, at last, by topic entity and relation to get the answer. There are many work about how to choose the relations in each hop, how to stop, my work is focus on solving these problems. Please follow me about multi-KBQA!!
+```
+用户:在哪个医院可以找到季惠翔？
+小晨: 第三军医大学第一附属医院
+**************************************************
+用户:我住在兰州市，咱家乡有哪些医院呢
+小晨: 甘肃省中医院,甘肃省康复中心医院,兰州西固区中医院,甘肃省劳改局兰州医院,甘肃中医学院附属医院,兰州军区总医院安宁分院,兰州军区总医院,兰州大学口腔医院,兰州市第二人民医院,兰州大学第二医院,甘肃省人民医院,甘肃省肿瘤医院,兰州第一人民医院,兰州大学第一医院,兰州市窑街煤电公司医院,兰州大学附属天浩医院,甘肃省第二人民医院
+**************************************************
+用户:我得了麻疹，该去哪个科？
+小晨: 感染科
+**************************************************
+用户:兰州市窑街煤电公司医院比较好的科是什么？
+小晨: 心血管内科,消化科,创伤骨科,神经内科
+**************************************************
+用户:兰州市窑街煤电公司医院是什么等级的？
+小晨: 三级乙等
+**************************************************
+用户:兰州市窑街煤电公司医院是医保定点单位吗？
+小晨: 医保定点
+**************************************************
+用户:兰州市有哪些医院？
+小晨: 甘肃省中医院,甘肃省康复中心医院,兰州西固区中医院,甘肃省劳改局兰州医院,甘肃中医学院附属医院,兰州军区总医院安宁分院,兰州军区总医院,兰州大学口腔医院,兰州市第二人民医院,兰州大学第二医院,甘肃省人民医院,甘肃省肿瘤医院,兰州第一人民医院,兰州大学第一医院,兰州市窑街煤电公司医院,兰州大学附属天浩医院,甘肃省第二人民医院
+**************************************************
+用户:兰州大学第二医院的电话是多少？
+小晨: 0931-8458109
+**************************************************
+用户:围绝经期综合征又可以叫做什么？
+小晨: 更年期综合征
+**************************************************
+用户:麻疹传人吗？
+小晨: 麻疹是儿童最常见的急性呼吸道传染病之一，其传染性很强，在人口密集而未普种疫苗的地区易发生流行，2～3年一次大流行。
+**************************************************
+
+Process finished with exit code 0
+
+```
   
  
  
